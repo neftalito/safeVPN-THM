@@ -1,5 +1,5 @@
 # TryHackMe safe VPN access
-IPtables rules to only have incoming connections from the machine on TryHackMe
+IPtables rules to only have incoming connections from the machine on TryHackMe.
 
 Usage:
 
