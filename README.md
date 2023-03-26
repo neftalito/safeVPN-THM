@@ -1,14 +1,15 @@
 # TryHackMe safe VPN access
-iptables rules to only have incoming connections from the machine on TryHackMe
+IPtables rules to only have incoming connections from the machine on TryHackMe
 
-usage:
+Usage:
 
 ```bash
-sudo chmod +x ./safevpn-thm.sh
+sudo chmod +x ./safevpn-thm.sh #Make it executable
 sudo ./safevpn-thm.sh <ip of deployed machine>
 ```
-example:
+Example:
 
 ```bash
-sudo ./safevpn-thm.sh 10.10.10.10
+sudo ./safevpn-thm.sh 10.10.10.10 #Create rules
+sudo ./safevpn-thm.sh --flush #Flush rules
 ```
