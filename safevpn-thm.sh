@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: Nisrin Ahmed aka Wh1teDrvg0n. Modified by neftalito.
 
-    flushTables(){
+   flushTables(){
     # IPv4 flush
       iptables -P INPUT ACCEPT
       iptables -P FORWARD ACCEPT
