@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: Nisrin Ahmed aka Wh1teDrvg0n. Modified by neftalito.
 
-   flushTables(){
+  flushTables(){
     # IPv4 flush
       iptables -P INPUT ACCEPT
       iptables -P FORWARD ACCEPT
@@ -53,6 +53,12 @@
       iptables -S
   }
   
+  # Check if user is root
+  if [[ $(id -u) -ne 0 ]]; then
+    echo "This script must be run as root"
+    exit 1
+  fi
+
   # Exit if there's no parameters
   if [ $# -eq 0 ]
   then
